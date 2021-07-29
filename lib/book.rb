@@ -1,6 +1,6 @@
 require 'pry'
 class Book
-attr_reader :title
+attr_reader :title, :publication_date, :author_last_name, :author_first_name
   def initialize(data)
     @author_first_name = data[:author_first_name]
     @author_last_name  = data[:author_last_name]
@@ -8,7 +8,7 @@ attr_reader :title
     @publication_date  = data[:publication_date]
   end
 
-  def name
+  def author
     name = @author_first_name + " " + @author_last_name
   end
 
