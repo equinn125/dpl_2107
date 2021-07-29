@@ -13,8 +13,11 @@ class Author
   end
 
   def write(title, publication_date)
+ data = library , publication_date
+ @book.map do |book|
+   
   @books << @book
-  #not sure how to get this working from here
+
 
   binding.pry
   end
